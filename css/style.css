@@ -1,57 +1,91 @@
 #index {
     display: grid;
     grid-template-areas: 
-    'hd nv nv nv'
-    'sc sc sc sc'
-    'ft ft ft ft';
+    'i-hd i-nv i-nv i-nv'
+    'i-sc i-sc i-sc i-sc'
+    'i-ft i-ft i-ft i-ft';
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 200px 900px 200px;
 }
 
-header {
-    grid-area: hd;
-    background-color: aqua;
+#i-header {
+    grid-area: i-hd;
+    background-color: #e74c3c;
+    border-radius: 15px;
+    text-align: center;
 }
 
-nav {
-    grid-area: nv;
-    background-color: black;
+#i-nav {
+    grid-area: i-nv;
+    background-color: #e74c3c;
+    display: flex;
+    border-radius: 15px;
+    margin-left: 5px;
+    
 }
 
-section {
-    grid-area: sc;
+#i-section {
+    grid-area: i-sc;
     background-color: blueviolet;
+    margin-top: 2px;
 }
 
-footer {
-    grid-area: ft;
+#i-footer {
+    grid-area: i-ft;
     background-color: cadetblue;
 }
+
+.indexlank {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexlank:hover {
+    color: blue;
+}
+
+h1 {
+    font-size:70px;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
 
 /*--------------------------------------------------------------------*/
 
 #about {
     display: grid;
     grid-template-areas: 
-    'hd nv nv'
-    'sc sc sc'
-    'sc sc sc';
+    'a-hd a-nv a-nv'
+    'a-sc a-sc a-sc'
+    'a-sc a-sc a-sc';
     grid-template-columns: 40% 30% 30%;
     grid-template-rows: 200px 500px 500px;
 }
 
-header {
-    grid-area: hd;
+#a-header {
+    grid-area: a-hd;
     background-color: aqua;
 }
 
-nav {
-    grid-area: nv;
+#a-nav {
+    grid-area: a-nv;
     background-color: brown;
 }
 
-section {
-    grid-area: sc;
+#a-section {
+    grid-area: a-sc;
     background-color: blueviolet;
 }
 
@@ -61,50 +95,58 @@ section {
 #card {
     display: grid;
     grid-template-areas: 
-    'hd hd nv'
-    'sc sc2 sc3'
+    'c-hd c-hd c-nv'
+    'c-sc sc2 sc3'
     'sc4 sc5 sc6';
     grid-template-columns: 33% 33% 34%;
     grid-template-rows: 200px 450px 450px;
 }
 
-header {
-    grid-area: hd;
+#c-header {
+    grid-area: c-hd;
     background-color: aqua;
+    border-radius: 15px;
 }
 
 
-section {
-    grid-area: sc;
+#c-section {
+    grid-area: c-sc;
     background-color: blueviolet;
+    border-radius: 15px;
 }
 
-nav {
-    grid-area: nv;
+#c-nav {
+    grid-area: c-nv;
     background-color: brown;
+    border-radius: 15px;
 }
 
 #sc2 {
     grid-area: sc2;
     background-color: crimson;
+    border-radius: 15px;
 }
 
 #sc3 {
     grid-area: sc3;
     background-color: chartreuse;
+    border-radius: 15px;
 }
 
 #sc4 {
     grid-area: sc4;
     background-color: coral;
+    border-radius: 15px;
 }
 
 #sc5 {
     grid-area: sc5;
     background-color: darkgrey;
+    border-radius: 15px;
 }
 
 #sc6 {
     grid-area: sc6;
     background-color:darkslategray;
+    border-radius: 15px;
 }
