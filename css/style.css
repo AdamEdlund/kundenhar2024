@@ -6,6 +6,7 @@
     'i-ft i-ft i-ft i-ft';
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 200px 900px 200px;
+    background-color: #fcc8c2;
 }
 
 #i-header {
@@ -20,14 +21,18 @@
     background-color: #e74c3c;
     display: flex;
     border-radius: 15px;
-    margin-left: 5px;
-    
+    margin-left: 3px;
+    padding: 25px;
 }
 
 #i-section {
     grid-area: i-sc;
-    background-color: blueviolet;
-    margin-top: 2px;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 70px;
 }
 
 #i-footer {
@@ -40,29 +45,26 @@
     flex: 1;
     align-items: center;
     justify-content: center;
+    background-color: #b4211095;
+    border-radius: 15px;
+    margin: 2px;
+    border: 0.1px solid;
+    border-color: whitesmoke;
+    color: aliceblue;
 }
 
 .indexlank:hover {
-    color: blue;
+    color: lightblue;
 }
 
 h1 {
     font-size:70px;
+    color: whitesmoke;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
 }
 
-button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-
-/*--------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 
 #about {
     display: grid;
@@ -90,7 +92,7 @@ button {
 }
 
 
-/*---------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 
 #card {
     display: grid;
@@ -108,16 +110,15 @@ button {
     border-radius: 15px;
 }
 
+#c-nav {
+    grid-area: c-nv;
+    background-color: brown;
+    border-radius: 15px;
+}
 
 #c-section {
     grid-area: c-sc;
     background-color: blueviolet;
-    border-radius: 15px;
-}
-
-#c-nav {
-    grid-area: c-nv;
-    background-color: brown;
     border-radius: 15px;
 }
 
@@ -149,4 +150,12 @@ button {
     grid-area: sc6;
     background-color:darkslategray;
     border-radius: 15px;
+}
+
+.cardsec {
+    
+}
+
+h2 {
+    text-align: center;
 }
