@@ -106,14 +106,18 @@ h1 {
 
 #c-header {
     grid-area: c-hd;
-    background-color: aqua;
+    background-color: #e74c3c;
     border-radius: 15px;
+    text-align: center;
+    margin: 3px;
 }
 
 #c-nav {
     grid-area: c-nv;
-    background-color: brown;
+    background-color: #e74c3c;
+    display: flex;
     border-radius: 15px;
+    padding: 25px;
 }
 
 #c-section {
@@ -142,18 +146,21 @@ h1 {
 
 #sc5 {
     grid-area: sc5;
-    background-color: darkgrey;
     border-radius: 15px;
+    background-image: url("../img/gym-back.jpg");
 }
 
 #sc6 {
     grid-area: sc6;
-    background-color:darkslategray;
+    background-image: url(../img/gym-abs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
 .cardsec {
-    
+   color: whitesmoke;
+   margin: 2px;
 }
 
 h2 {
