@@ -1,3 +1,59 @@
+h1 {
+    font-size:70px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size:40px;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.rubrik {
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+.indexlank {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #e74c3c;
+    border-radius: 15px;
+    margin: 2px;
+    border: 0.1px solid;
+    border-color: whitesmoke;
+    color: aliceblue;
+}
+
+.indexlank:hover {
+    color: black;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.active {
+    background-color: #b4211095 ;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------*/
 #index {
     display: grid;
     grid-template-areas: 
@@ -5,8 +61,8 @@
     'i-sc i-sc i-sc i-sc'
     'i-ft i-ft i-ft i-ft';
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 200px 900px 200px;
-    background-color: #fcc8c2;
+    grid-template-rows: 150px 1000px 100px;
+    background-color: rgb(255, 255, 255);
 }
 
 #i-header {
@@ -23,45 +79,43 @@
     border-radius: 15px;
     margin-left: 3px;
     padding: 25px;
+    overflow: hidden;
 }
 
 #i-section {
     grid-area: i-sc;
-    background-color: whitesmoke;
+    background-image:-moz-element() ;
     margin-top: 5px;
     border-radius: 15px;
     text-align: center;
     padding-top: 50px;
     font-size: 70px;
+    background-image:url(../img/slideshow1.jpg);
+    background-size:2000px 1000px;
+    background-repeat: no-repeat;
 }
 
 #i-footer {
     grid-area: i-ft;
-    background-color: cadetblue;
-}
-
-.indexlank {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: #b4211095;
+    background-color: #e74c3c;
+    text-align: center;
+    color: black;
     border-radius: 15px;
-    margin: 2px;
-    border: 0.1px solid;
-    border-color: whitesmoke;
-    color: aliceblue;
 }
 
-.indexlank:hover {
-    color: lightblue;
+#i-text {
+    position: absolute;
+    top: 10;
+    left: 450px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
 
-h1 {
-    font-size:70px;
-    color: whitesmoke;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
+.container {
+    position: relative;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -69,28 +123,110 @@ h1 {
 #about {
     display: grid;
     grid-template-areas: 
-    'a-hd a-nv a-nv'
-    'a-sc a-sc a-sc'
-    'a-sc a-sc a-sc';
-    grid-template-columns: 40% 30% 30%;
-    grid-template-rows: 200px 500px 500px;
+    'a-hd a-nv a-nv a-nv'
+    'a-sc a-sc2 a-sc2 a-sc2'
+    'a-sc3 p1 p2 p3'
+    "ft ft ft ft";
+    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-rows: 200px 100px 1000;
 }
 
 #a-header {
     grid-area: a-hd;
-    background-color: aqua;
+    background-color: #e74c3c;
+    border-radius: 15px;
+    text-align: center;
+    margin: 3px;
+    position: sticky;
+    top: 0;
 }
 
 #a-nav {
     grid-area: a-nv;
-    background-color: brown;
+    background-color: #e74c3c;
+    display: flex;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 3px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
 }
 
 #a-section {
     grid-area: a-sc;
-    background-color: blueviolet;
+    background-color: #e74c3c;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
+#a-section2 {
+    grid-area: a-sc2;
+    background-color: #e74c3c;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    margin-left: 3px;
+}
+
+#a-section3 {
+    grid-area: a-sc3;
+    background-color: #e74c3c;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.s-text {
+        border-bottom: 2px solid;
+}
+
+#person1 {
+    grid-area: p1;
+    background-color:#e74c3c;
+    margin-left: 3px;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#person2 {
+    grid-area: p2;
+    background-color:#e74c3c;
+    color: whitesmoke;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#person3 {
+    grid-area: p3;
+    background-color:#e74c3c;
+    color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#tito {
+    height: 200px;
+}
+
+#thomas {
+    height:200px ;
+}
+
+#benjamin {
+    height: 200px;
+}
 
 /*-----------------------------------------------------------------------------------------------------*/
 
@@ -101,7 +237,7 @@ h1 {
     'c-sc sc2 sc3'
     'sc4 sc5 sc6';
     grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 200px 450px 450px;
+    grid-template-rows: 150px 450px 450px;
 }
 
 #c-header {
@@ -118,41 +254,53 @@ h1 {
     display: flex;
     border-radius: 15px;
     padding: 25px;
+    margin: 3px;
+    overflow: hidden;
 }
 
 #c-section {
     grid-area: c-sc;
-    background-color: blueviolet;
+    background-image: url(../img/Gym-axlar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
 #sc2 {
     grid-area: sc2;
-    background-color: crimson;
+    background-image: url(../img/gym-bröst.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
 #sc3 {
     grid-area: sc3;
-    background-color: chartreuse;
+    background-image: url(../img/gym-ben.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
 #sc4 {
     grid-area: sc4;
-    background-color: coral;
+    background-image: url(../img/armar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 15px;
 }
 
 #sc5 {
     grid-area: sc5;
     border-radius: 15px;
-    background-image: url("../img/gym-back.jpg");
+    background-image: url(../img/gym-rygg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #sc6 {
     grid-area: sc6;
-    background-image: url(../img/gym-abs.jpg);
+    background-image: url(../img/gym-mage.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -161,8 +309,13 @@ h1 {
 .cardsec {
    color: whitesmoke;
    margin: 2px;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
-h2 {
-    text-align: center;
+.cardsec2 {
+    background-color:rgba(231, 54, 54, 0.281);
+    border-radius: 15px;
+    margin: 10px;
+    margin-right: 150px;
 }
